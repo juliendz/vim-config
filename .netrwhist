@@ -1,0 +1,11 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhist_cnt =9
+let g:netrw_dirhist_1='/media/sf_DATA/Dev/projects/unus-django/unus/imperium/classes'
+let g:netrw_dirhist_2='/media/sf_DATA/Dev/projects/unus-django/unus/imperium'
+let g:netrw_dirhist_3='/media/sf_DATA/Dev/projects/unus-django/unus'
+let g:netrw_dirhist_4='/media/sf_DATA/Dev/projects/unus-django'
+let g:netrw_dirhist_5='/media/sf_DATA/Dev/projects'
+let g:netrw_dirhist_6='/media/sf_DATA/Dev/projects/unus-og'
+let g:netrw_dirhist_7='/media/sf_DATA/Dev/projects/unus-og/unus-app'
+let g:netrw_dirhist_8='/media/sf_DATA/Dev/projects/unus-og/unus-app/unus'
+let g:netrw_dirhist_9='/media/sf_DATA/Dev/projects/unus-og/unus-app/unus/includes'
