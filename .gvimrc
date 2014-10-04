@@ -8,17 +8,20 @@ call vundle#begin()
 
 Plugin 'gmarik/Vundle.vim'
 
-"NerdTree
-Plugin 'https://github.com/scrooloose/nerdtree.git'
-
 "Color schemes
-Plugin 'jonathanfilip/vim-lucius'
-Plugin 'nanotech/jellybeans.vim'
-Plugin 'flazz/vim-colorschemes'
-Plugin 'reedes/vim-colors-pencil'
+Plugin 'freeo/vim-kalisi'
+
+"unite.vim
+Plugin 'Shougo/unite.vim'
+
+"vimfiler
+Plugin 'Shougo/vimfiler.vim'
 
 "vim-airline
 Plugin 'bling/vim-airline'
+
+"YouCompleteMe
+Plugin 'Valloric/YouCompleteMe'
 
 "All plugins must be added before following line
 call vundle#end()
@@ -29,19 +32,24 @@ set t_Co=256
 set encoding=utf-8
 
 "vim-airline options
-let g:airline_left_sep = ''
-let g:airline_left_alt_sep = ''
-let g:airline_right_sep = ''
-let g:airline_right_alt_sep = ''
-let g:airline_symbols.branch = ''
+if !exists('g:airline_symbols')
+    let g:airline_symbols = {}
+endif
+let g:airline_left_sep = '▶'
+let g:airline_left_alt_sep = '»'
+let g:airline_right_sep = '◀'
+let g:airline_right_alt_sep = '«'
+let g:airline_symbols.linenr = '¶'
+let g:airline_symbols.branch = '⎇'
+let g:airline_symbols.paste = 'ρ'
+let g:airline_symbols.whitespace = 'Ξ'
 let g:airline_symbols.readonly = ''
-let g:airline_symbols.linenr = ''
 let g:airline#extensions#tabline#enabled = 1
 let g:airline_theme='kalisi'
 
 
-colorscheme lucius
-LuciusLight
+colorscheme kalisi
+set background=light
 
 set guifont=Bitstream\ Vera\ Sans\ Mono\ 9
 
@@ -58,6 +66,7 @@ set incsearch					"Increamental search
 set hlsearch 					"Highlight search terms
 set foldenable					"Auto fold code
 
+set sw=4                                        "Set shitfwidth
 set nowrap					"wrap long lines
 set expandtab					"Tabs are now spaces, not tabs
 set autoindent					"Indent at the same level as the previous line
