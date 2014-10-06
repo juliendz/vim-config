@@ -23,6 +23,13 @@ Plugin 'bling/vim-airline'
 "YouCompleteMe
 Plugin 'Valloric/YouCompleteMe'
 
+"Command-T
+Plugin 'wincent/Command-T'
+
+"fugitive
+Plugin 'tpope/vim-fugitive'
+
+
 "All plugins must be added before following line
 call vundle#end()
 
