@@ -29,6 +29,12 @@ Plugin 'wincent/Command-T'
 "fugitive
 Plugin 'tpope/vim-fugitive'
 
+"Bclose
+Plugin 'vadimr/bclose.vim'
+
+"jinja
+Plugin 'mitsuhiko/vim-jinja'
+
 
 "All plugins must be added before following line
 call vundle#end()
