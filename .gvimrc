@@ -10,21 +10,19 @@ Plugin 'gmarik/Vundle.vim'
 
 "Color schemes
 Plugin 'freeo/vim-kalisi'
+Plugin 'cascadia.vim'
+
+"Ctrl-p"
+Plugin 'kien/ctrlp.vim'
 
 "unite.vim
 Plugin 'Shougo/unite.vim'
-
-"vimfiler
-Plugin 'Shougo/vimfiler.vim'
 
 "vim-airline
 Plugin 'bling/vim-airline'
 
 "YouCompleteMe
 Plugin 'Valloric/YouCompleteMe'
-
-"Command-T
-Plugin 'wincent/Command-T'
 
 "fugitive
 Plugin 'tpope/vim-fugitive'
@@ -61,8 +59,7 @@ let g:airline#extensions#tabline#enabled = 1
 let g:airline_theme='kalisi'
 
 
-colorscheme kalisi
-set background=light
+colorscheme cascadia
 
 set guifont=Bitstream\ Vera\ Sans\ Mono\ 9
 
